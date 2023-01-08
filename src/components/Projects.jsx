@@ -3,7 +3,7 @@ import './css/Projects.sass'
 
 const Projects = () => {
   return (
-    <div className="sectionwrap">
+    <div id="projects" className="sectionwrap">
       <h1>Projects</h1>
     </div>
   )
