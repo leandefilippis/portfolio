@@ -1,9 +1,9 @@
 @import ./resources/Presets
 
-.home
+#home
     height: 100vh
-    background: linear-gradient(20deg, #4f3e36, #262626)
-    z-index: -2
+    background: #262626
+    background: linear-gradient(60deg, #262626, #262626, #c3744a)
 
 .background
     position: absolute
@@ -14,7 +14,6 @@
     border-top-right-radius: 60%
     border-bottom-left-radius: 70%
     opacity: 0.8
-    z-index: -1
     filter: blur(1.5px)
 
 .sign
@@ -24,16 +23,31 @@
     width: 250px
 
 .header
-    padding: 160px 20% 120px
+    position: relative
+    padding: 160px 16% 100px
 
 .title
     color: #fafafa
     font-size: 80px
-    font-family: inter
-    margin: 0
+    font-family: 'Poppins'
+    margin-bottom: -20px
 
 .foot
-    color: #fafafa
+    color: #c3744a
     font-size: 40px
-    margin: 0
-    margin-left: 160px
+    font-family: 'Neou'
+    letter-spacing: 6px
+    margin-left: 6px
+
+.header a ion-icon
+    height: 45px
+    width: 45px
+    color: #fafafa
+    margin-top: 20px
+    margin-right: 20px
+    transition: 0.5s
+
+.header a ion-icon:hover
+    transform: scale(110%)
+    transition: 0.5s
+    color: #c3744a

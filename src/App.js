@@ -8,12 +8,12 @@ import Home from './components/Home';
 
 function App() {
   return (
-      <div className="App">
+      <div>
           <Navbar/>
           <Home />
-          <About />
-          <Projects />
           <Skills />
+          <Projects />
+          <About />
           <Contact />
       </div>
   );

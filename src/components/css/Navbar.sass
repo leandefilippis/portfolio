@@ -6,19 +6,20 @@
     box-sizing: border-box
 
 .body
-    position: fixed
-    top: 45%
     display: flex
     justify-content: center
     align-items: center
-    width: 100px
+    position: fixed
+    top: 45%
+    width: 130px
     background: transparent
+    z-index: 2
 
 .navigation
     position: fixed
     width: 60px
     height: 400px
-    background: #fff
+    background: #fafafa
     display: flex
     justify-content: center
     align-items: center
@@ -33,7 +34,7 @@
     list-style: none
     position: relative
     height: 70px
-    z-index: 2
+    z-index: 4
 
 .navigation ul li a 
     position: relative
@@ -55,13 +56,13 @@
     color: #222327
     font-size: 1.5em
     transition: 0.5s
-    transition-delay: 0s
+    transition-delay: 0.15s
 
 .navigation ul li.active a .icon
     background: #414c35
-    color: #fff
+    color: #fafafa
     transform: translateX(30px)
-    transition-delay: 0.25s
+    transition-delay: 0.15s
 
 .navigation ul li a .icon::before
     content: ''
@@ -85,10 +86,11 @@
     right: -34.5px
     width: 70px
     height: 70px
-    background: #fff
+    background: #fafafa
     border-radius: 50%
-    z-index: 1
+    z-index: 3
     transition: 0.5s
+    transition-delay: 0.2s
 
 .indicator::before
     content: ''
@@ -99,7 +101,7 @@
     height: 30px
     background: transparent
     border-radius: 50%
-    box-shadow: -20px 15px #fff
+    box-shadow: -20px 15px #fafafa
 
 .indicator::after
     content: ''
@@ -126,54 +128,3 @@
 
 .navigation ul li:nth-child(5).active ~ .indicator
     transform: translateY(calc(70px * 4))
-
-
-
-
-
-
-.button
-    position: absolute
-    top: 0px
-    opacity: 0.5
-
-.appbar
-    position: fixed
-    height: 100%
-    width: 176px
-    z-index: 1000
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    transition: all 0.45s ease
-    opacity: 0.75
-    button
-        background: #ffffff
-        height: 65px
-        width: 65px
-        border: none
-        border-radius: 50%
-        margin-bottom: 50px
-        transition: 0.2s
-        &:hover
-            cursor: pointer
-            transition: 0.2s
-            transform: scale(120%)
-        img
-            opacity: 1
-
-.head
-    color: white
-
-.logo
-    height: 70px
-    width: 140px
-    margin-left: 10px
-    padding: 10px
-
-.flex
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
